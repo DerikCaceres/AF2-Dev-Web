@@ -2,8 +2,9 @@
   <div id="app">
     <div class="geral">
       <Navigationdrawer/>
+      
       <v-content>
-        <v-container class="conteudo">main teste</v-container>
+        <v-container class="conteudo"><router-view/></v-container>
       </v-content>
     </div>
   </div>

@@ -20,6 +20,7 @@
         <v-list-item
           v-for="item in items"
           :key="item.title"
+          :to="item.to"
           link
         >
           <v-list-item-icon>
@@ -45,9 +46,10 @@
     data () {
       return {
         items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
+          { title: 'Carros', icon: 'mdi-car', to:'/carros' },
+          { title: 'Conta', icon: 'mdi-account', to:'/conta' },
+          { title: 'Meus carros', icon: 'mdi-garage',to:'/meuscarros' },
+          { title: 'Locais', icon: 'mdi-map-marker',to:'/locais' }
         ],
         right: null,
       }

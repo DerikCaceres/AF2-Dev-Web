@@ -12,11 +12,19 @@
       <v-spacer></v-spacer>
 
       <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-car</v-icon>
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon>mdi-account</v-icon>
+      </v-btn>
+
+       <v-btn icon>
+        <v-icon>mdi-garage</v-icon>
+      </v-btn>
+      
+       <v-btn icon>
+        <v-icon>mdi-map-marker</v-icon>
       </v-btn>
 
       <v-menu
