@@ -5,11 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+  cards:[],
+  tittle:"Hello World",
   },
-  mutations: {
+  mutations:{
+
   },
-  actions: {
+  actions:{
+
   },
-  modules: {
+  getters:{
+
   }
 })

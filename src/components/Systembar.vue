@@ -5,7 +5,7 @@
       dark
     >
       <v-icon>mdi-message</v-icon>
-      <span>10 unread messages</span>
+      <span>Mensagens</span>
       <v-spacer></v-spacer>
       <v-icon>mdi-minus</v-icon>
       <v-icon>mdi-checkbox-blank-outline</v-icon>

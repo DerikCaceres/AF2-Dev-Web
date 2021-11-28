@@ -7,7 +7,7 @@
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-toolbar-title>WebCars</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -43,11 +43,12 @@
 
         <v-list>
           <v-list-item
-            v-for="n in 5"
+            v-for="n in 3"
             :key="n"
             @click="() => {}"
           >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
+            <v-list-item-title>Opcao {{ n }}</v-list-item-title>
+            
           </v-list-item>
         </v-list>
       </v-menu>
