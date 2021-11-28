@@ -4,16 +4,16 @@
     max-width="300"
   >
     <v-img
-      src="https://3.bp.blogspot.com/-n6CLT0mp0Jk/WyFDdPBfUsI/AAAAAAABFF0/53AIZPwimOsz4Eo9AD4FDsieBjM_Z-pfwCLcBGAs/s1600/VW-Golf-2019%2B%25287%2529.jpg"
+      v-bind:src="cardInfo.url"
       height="200px"
     ></v-img>
 
     <v-card-title>
-      Golg GTI - 2020
+      {{cardInfo.name}}
     </v-card-title>
 
     <v-card-subtitle>
-      R$ 180.000,00 
+     {{cardInfo.price}}
     </v-card-subtitle>
 
     <v-card-actions>
@@ -39,7 +39,7 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          Carro esportivo.
+          {{cardInfo.tipo}}
         </v-card-text>
       </div>
     </v-expand-transition>
@@ -48,8 +48,6 @@
 
 <script>
   export default {
-    data: () => ({
-      show: false,
-    }),
+    props:['cardid','cardInfo']
   }
 </script>

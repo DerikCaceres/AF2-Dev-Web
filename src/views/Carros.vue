@@ -3,39 +3,37 @@
 <v-row >
 
       <v-col
-        v-for="n in 1"
-        :key="n"
+        v-for="(data,i) in cards"
+        :key="i"
         cols="5"
         lg="5"
       >
-      <Mycard></Mycard>
+      <Mycard :cardid="i" :cardInfo="data"></Mycard>
 
       </v-col>
 
     </v-row>
-    <v-col
-        v-for="n in 1"
-        :key="n"
-        cols="5"
-        lg="5"
-      >
-      <Mycard2></Mycard2>
 
-      </v-col>
 
  </div>
 </template>
 
 <script>
   import Mycard from '../components/Mycard'
-  import Mycard2 from '../components/Mycard2'
 
   export default {
-    name: 'Home',
+    computed:{
+      cards(){
+        return this.$store.state.cards
+      },},
 
     components: {
-      Mycard,
-      Mycard2
-    },
+      Mycard,    },
+      data () { 
+      return {
+       titleView:this.$store.state.cards
+        
+      }
+  }
   }
 </script>
