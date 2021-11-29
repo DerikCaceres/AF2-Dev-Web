@@ -1,24 +1,6 @@
 # myproject
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://github.com/DerikCaceres/AF2-Dev-Web.git
+![Screenshot_1](https://github.com/DerikCaceres/AF2-Dev-Web/blob/main/src/assets/myproject.png?raw=true)
+![Screenshot_2](https://github.com/DerikCaceres/AF2-Dev-Web/blob/main/src/assets/myproject.png?raw=true)
+![Screenshot_3](https://github.com/DerikCaceres/AF2-Dev-Web//blob/main/src/assets/myproject.png?raw=true)
