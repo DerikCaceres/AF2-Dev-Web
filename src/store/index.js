@@ -1,8 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import axios from 'axios'
 Vue.use(Vuex)
 
+var options = {
+  method: 'GET',
+  url: 'https://car-data.p.rapidapi.com/cars',
+  params: {limit: '10', page: '0'},
+  headers: {
+    'x-rapidapi-host': 'car-data.p.rapidapi.com',
+    'x-rapidapi-key': '5135714c79mshf68c94aec7a456cp177b05jsn4b461519c4e2'
+  }
+};
 export default new Vuex.Store({
   state: {
   cards:[
@@ -12,14 +21,27 @@ export default new Vuex.Store({
     {name:"Bmw M4 - 2021", price:"R$ 500.000,00",url:"https://1.bp.blogspot.com/-WSo_0MAqDQo/X2vVb5r4E0I/AAAAAAAAjIE/xL15BJ6gEJIX5SCjLbMdJBQGIeeR5vPPACLcBGAsYHQ/s2048/BMW-M4%2B%25282%2529.jpg", tipo:"Carro sedan esportivo"}
   ],
   tittle:"Hello World",
+  events:[],
   },
   mutations:{
-
+    SET_EVENTS(state,payload){
+      state.events=payload}
   },
   actions:{
+    fetchEvents({commit}){
+      axios.request(options)
+      .then(res=>{ 
+        const payload = res.data.list
+        commit('SET_EVENTS',payload)
+        })
+      .catch(err=> {console.error(err)})
+    }
 
   },
   getters:{
-
+    bigTitle(state){
+      return state.title.toUpperCase()
+    },
+   
   }
 })

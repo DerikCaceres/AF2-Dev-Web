@@ -3,9 +3,9 @@
     <div class="geral">
       <Navigationdrawer/>
       
-      <v-content>
+      <v-main>
         <v-container class="conteudo"><router-view/></v-container>
-      </v-content>
+      </v-main>
     </div>
   </div>
 </template>

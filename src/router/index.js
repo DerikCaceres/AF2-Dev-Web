@@ -27,6 +27,12 @@ const routes = [
     name: 'Locais',
     
     component: () => import( '../views/Locais.vue')
+  },
+  {
+    path: '/apicarros',
+    name: 'Api',
+    
+    component: () => import( '../views/Apicarros.vue')
   }
 ]
 

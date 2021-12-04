@@ -49,7 +49,8 @@
           { title: 'Carros', icon: 'mdi-car', to:'/carros' },
           { title: 'Conta', icon: 'mdi-account', to:'/conta' },
           { title: 'Meus carros', icon: 'mdi-garage',to:'/meuscarros' },
-          { title: 'Locais', icon: 'mdi-map-marker',to:'/locais' }
+          { title: 'Locais', icon: 'mdi-map-marker',to:'/locais' },
+          { title: 'Api', icon: 'mdi-car',to:'/apicarros' }
         ],
         right: null,
       }

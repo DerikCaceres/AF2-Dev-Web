@@ -9,7 +9,7 @@
     ></v-img>
 
     <v-card-title>
-      {{cardInfo.name}}
+      {{cardInfo.title}}
     </v-card-title>
 
     <v-card-subtitle>
@@ -48,6 +48,9 @@
 
 <script>
   export default {
+    data: () => ({
+      show: false,
+    }),
     props:['cardid','cardInfo']
   }
 </script>
