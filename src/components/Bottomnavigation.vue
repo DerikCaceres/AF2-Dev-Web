@@ -1,5 +1,6 @@
 <template>
   <v-bottom-navigation
+    app
     :value="value"
     color="primary"
     horizontal

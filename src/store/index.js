@@ -20,7 +20,7 @@ export default new Vuex.Store({
     {name:"Porsche Macan - 2021", price:"R$ 500.000,00",url:"https://cdn.motor1.com/images/mgl/9MVpX/s1/2020-porsche-macan-gts.jpg", tipo:"Carro sedan esportivo"},
     {name:"Bmw M4 - 2021", price:"R$ 500.000,00",url:"https://1.bp.blogspot.com/-WSo_0MAqDQo/X2vVb5r4E0I/AAAAAAAAjIE/xL15BJ6gEJIX5SCjLbMdJBQGIeeR5vPPACLcBGAsYHQ/s2048/BMW-M4%2B%25282%2529.jpg", tipo:"Carro sedan esportivo"}
   ],
-  tittle:"Hello World",
+  tittle:"Modelos de carros",
   events:[],
   },
   mutations:{
@@ -28,10 +28,13 @@ export default new Vuex.Store({
       state.events=payload}
   },
   actions:{
+
     fetchEvents({commit}){
+      console.log('fetchEvents')
       axios.request(options)
       .then(res=>{ 
-        const payload = res.data.list
+        const payload = res.data
+        console.log('ssss'+ payload)
         commit('SET_EVENTS',payload)
         })
       .catch(err=> {console.error(err)})

@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-system-bar
+    app
       window
       dark
     >

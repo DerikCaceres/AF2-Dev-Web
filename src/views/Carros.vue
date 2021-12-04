@@ -1,8 +1,6 @@
 <template>
  <div>
    
-   <h1>{{events}}</h1>
-   
 <v-row >
 
       <v-col

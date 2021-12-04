@@ -1,5 +1,7 @@
 <template>
-    <v-navigation-drawer clipped permanent>
+    <v-navigation-drawer 
+    app
+    clipped permanent>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">

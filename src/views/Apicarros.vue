@@ -1,28 +1,28 @@
 <template>
  <div>
    
-   <h1>{{events}}</h1>
-   
-<v-row >
+   <h1>{{tittle}}</h1>
+  <v-row >
 
       <v-col
-        v-for="(data,i) in cards"
+        v-for="(data,i) in events"
         :key="i"
         cols="5"
         lg="5"
+        md ="4"
       >
-      <Mycard :cardid="i" :cardInfo="data"></Mycard>
+      <Cardapi :cardid="i" :cardInfo="data"></Cardapi>
 
       </v-col>
 
     </v-row>
 
 
- </div>
+</div>
 </template>
 
 <script>
-  import Mycard from '../components/Mycard'
+  import Cardapi from '../components/Cardapi'
 
   export default {
     name:'Carros',
@@ -33,6 +33,7 @@
       return this.$store.getters.bigTitle
     },
     events(){
+      
       return this.$store.state.events
     },
   
@@ -43,7 +44,7 @@
 
 
     components: {
-      Mycard,    },
+      Cardapi,    },
       data () { 
       return {
        titleView:this.$store.state.cards,
